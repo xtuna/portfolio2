@@ -1,3 +1,15 @@
+function forceDownload() {
+    // Create a temporary link element
+    const link = document.createElement('a');
+    link.href = 'https://www.dropbox.com/scl/fi/rwgx9d5ikzujgvbiiebpv/Velasco-Ma.-Cristina-S_Resume.pdf?rlkey=k1rl5xl27959fxjs6rt2puixz&st=7ia5pyki&dl=0&dl=1';
+    link.download = 'Cristina_Velasco_Resume.pdf';
+
+    // Append to body, click, then remove
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
 function flipImage() {
     document.getElementById("flipCard").classList.toggle("flipped");
 }
@@ -31,102 +43,117 @@ const projects = [{
         id: 1,
         title: "A Web-based Document Management System for the Research Support Center",
         tag: "Website",
-        year: 2025,
-        date: "2025-01-15",
-        images: ["home_page1.png", "dashboard.png", "documents.png", "search.png"], // Multiple images
-        description: "A comprehensive web-based document management system designed specifically for the Research Support Center. This system streamlines document organization, version control, and collaborative research workflows, making it easier for researchers to manage and access important documents.",
-        technologies: ["PHP", "MySQL", "JavaScript", "Bootstrap", "HTML5", "CSS3"],
+        year: 2024,
+        date: "2024-07-22",
+        images: ["p1.png", "p2.png", "p3.png", "p4.png", "p5.png", "p6.png", "p7.png", "p8.png", "p9.png", "p10.png", "p11.png", "p12.png", "p13.png", "p14.png", "p15.png", "p16.png", "p17.png", "p18.png", "p19.png", "p20.png", "p21.png", "p22.png", "p23.png", "p24.png", "p25.png", "p26.png", "p27.png", "p28.png", "p29.png", "p30.png", "p31.png", "p32.png", "p33.png", "p34.png", "p35.png"], // Multiple images
+        description: "A web-based document management system developed for the Research Support Center to streamline application processing, automate notifications, and improve document handling, ensuring faster approvals and better communication with researchers.",
+        technologies: ["C#", "MSSQL", "JavaScript", "Bootstrap", "ASP .NET Framework"],
         features: [
-            "Document upload and categorization",
-            "Version control system",
-            "User authentication and authorization",
-            "Advanced search functionality",
-            "Collaborative workspace",
-            "Automated backup system"
+            "User Friendly interface",
+            "Document Management (Upload, Read, Update, Sort, Tracking, and Cancel)",
+            "Centralized Repository",
+            "Audit Trail",
+            "Provide Notifications and Updates",
+            "Status Document Monitoring",
+            "Role-based access control",
+            "Search and Filtering",
+            "Generate Reports"
         ],
         liveUrl: "#",
-        githubUrl: "#"
+        githubUrl: "https://drive.google.com/drive/folders/1dj8_ebaIThl-u087XKaWN8SOscX3eRGg?usp=drive_link",
+        documentUrl: "https://docs.google.com/document/d/1KmAyWQBYIhAKs_YkTYOZwzZ5-eta90VJ/edit?usp=sharing&ouid=107806911557582686117&rtpof=true&sd=true"
     },
     {
         id: 2,
         title: "Lagoon Hub",
         tag: "Website",
         year: 2024,
-        date: "2024-11-20",
-        images: ["home_page2.png", "map.png", "data.png"], // Multiple images
-        description: "An innovative platform connecting marine researchers and environmental enthusiasts. Lagoon Hub serves as a centralized location for sharing research data, environmental monitoring results, and conservation efforts related to lagoon ecosystems.",
-        technologies: ["React", "Node.js", "MongoDB", "Express", "Chart.js", "Mapbox"],
+        date: "2024-03-13",
+        images: ["pp1.png", "pp2.jfif", "pp3.png", "pp4.png", "pp5.png", "pp6.png", "pp7.png", "pp8.png"], // Multiple images
+        description: "The PUP Lagoon Ordering App revolutionizes the way users interact in Lagoon by offering a seamless ordering experience through innovative features. Users can effortlessly place their orders by choosing what store they want to buy and check out from the app’s interface. With automatic retrieval of item information and pricing, users can assure in their orders accuracy, ensuring a convenient and reliable service. The app guarantees accuracy and transparency in pricing, enhancing user confidence. Moreover, the app maintains a comprehensive order history, enabling users to track past purchases and streamline future orders.",
+        technologies: ["PHP", "ASP. NET Core", "MySQL", "Bootstrap"],
         features: [
-            "Interactive lagoon mapping",
-            "Real-time environmental data",
-            "Research collaboration tools",
-            "Data visualization dashboard",
-            "Community forum",
-            "Mobile responsive design"
+            "User Account Management",
+            "Store Browsing & Status",
+            "Product Catalog & Search",
+            "Ordering System",
+            "Order Tracking",
+            "Feedback & Ratings"
         ],
         liveUrl: "#",
-        githubUrl: "#"
+        githubUrl: "https://drive.google.com/drive/folders/1GkhH_hJACpIkerfCQjH0zF0j1cO8_hrW?fbclid=IwY2xjawKrTM1leHRuA2FlbQIxMQABHofjNqPdVEjFRYqylopKVGB8kQcDIBEiiRliotzltgeOXnF9lYnWkqeD8UWd_aem__X7j-z6U-8ZTM1YlsSyHVA",
+        documentUrl: "https://docs.google.com/document/d/1hQPuP1Drre3-s9iVwSVPXoNy5PDCOXXH3lun85-y2Qs/edit?usp=sharing"
     },
     {
         id: 3,
         title: "ReliQuik",
         tag: "UI-UX",
         year: 2023,
-        date: "2023-08-10",
-        images: ["home_page3.png", "wireframe.png", "prototype.png"], // Multiple images
-        description: "A user-centered design project focused on creating an intuitive interface for quick reliability testing tools. ReliQuik emphasizes accessibility and ease of use while maintaining professional functionality for engineering applications.",
-        technologies: ["Figma", "Adobe XD", "Sketch", "InVision", "Principle"],
+        date: "2023-05-25",
+        images: ["pppp1.png", "pppp2.png", "pppp3.png", "pppp4.png"], // Multiple images
+        description: "REALIEABLE is a user-centered web application designed to streamline the process of verifying online information. Focused on students and young researchers, it combines intuitive content filtering, credibility tools, and collaborative features to promote efficient and reliable research in academic and everyday digital environments.",
+        technologies: ["Figma", "Sketch"],
         features: [
-            "Intuitive user interface design",
-            "Accessibility-first approach",
-            "Interactive prototyping",
-            "User testing and iteration",
-            "Design system creation",
-            "Mobile-first design"
+            "User Account Setup",
+            "Content Creation & Management",
+            "Content Filtering & Verification",
+            "Search System",
+            "Engagement & Credibility Signals",
+            "Collaboration & Discussion"
         ],
         liveUrl: "#",
-        behanceUrl: "#"
+        behanceUrl: "#",
+        documentUrl: "https://docs.google.com/document/d/1Iuip7ND6O8Np98uR3CpWQbYyfe9IWTI5sgwecmipVxQ/edit?usp=sharing"
     },
     {
         id: 4,
         title: "ShoPUP",
         tag: "Website",
         year: 2024,
-        date: "2024-03-15",
-        images: ["ShoPUP.png", "shop-products.png", "shop-cart.png"], // Multiple images
-        description: "An e-commerce platform designed specifically for university students and local businesses. ShoPUP creates a marketplace ecosystem that supports the local economy while providing students with convenient access to goods and services.",
-        technologies: ["Vue.js", "Laravel", "PostgreSQL", "Stripe API", "Redis", "Docker"],
+        date: "2024-02-17",
+        images: ["ppp1.png", "ppp2.png", "ppp3.png", "ppp4.png", "ppp5.png", "ppp6.png", "ppp7.png", "ppp8.png", "ppp9.png", "ppp10.png", "ppp11.png", "ppp12.png", "ppp13.png", "ppp14.png", "ppp15.png", "ppp16.png", "ppp17.png"], // Multiple images
+        description: "Many current sales inventory systems suffer from outdated technology, leading to performance issues and limited functionality. A lack of real-time inventory visibility often causes stock inaccuracies, affecting restocking efficiency and customer satisfaction. To address these challenges, the group developed ShoPUP—an online shop website with integrated customer reviews.",
+        technologies: ["PHP", "MySQLi", "Javascript", "CSS"],
         features: [
-            "Student verification system",
-            "Local business integration",
-            "Secure payment processing",
-            "Order tracking system",
-            "Review and rating system",
-            "Admin dashboard"
+            "Manage Category List",
+            "Manage Brand List",
+            "Manage Products",
+            "Manage Orders",
+            "Manage Messages",
+            "Browse Product with details",
+            "Shopping Cart",
+            "Login/Registration",
+            "Manage Orders",
+            "Manage Account Details",
+            "Add Products to Wish List",
+            "Add Products to Compare",
+            "Send Message to Management"
         ],
         liveUrl: "#",
-        githubUrl: "#"
-    },
-    {
-        id: 5,
-        title: "Happy Birthday",
-        tag: "UI-App",
-        year: 2024,
-        date: "2024-07-22",
-        images: ["bday.jpg", "bday-calendar.png", "bday-party.png"], // Multiple images
-        description: "A delightful mobile application interface designed to help users create personalized birthday experiences. The app focuses on social connection and celebration planning with an emphasis on user engagement and joy.",
-        technologies: ["Flutter", "Firebase", "Adobe After Effects", "Lottie", "Figma"],
-        features: [
-            "Personalized celebration planning",
-            "Social media integration",
-            "Custom animation library",
-            "Event scheduling",
-            "Photo sharing capabilities",
-            "Push notifications"
-        ],
-        liveUrl: "#",
-        githubUrl: "#"
+        githubUrl: "https://drive.google.com/file/d/13Xs5VfXvjxEWk6fgcOffDDQh_cBuD7sN/view?usp=sharing",
+        documentUrl: "https://docs.google.com/document/d/10TOBwqFimtc6uLJ0QS7E9ohA9RRgx8WU/edit?usp=sharing&ouid=112556465980385058368&rtpof=true&sd=true"
     }
+    // },
+    // {
+    //     id: 5,
+    //     title: "Happy Birthday",
+    //     tag: "UI-App",
+    //     year: 2024,
+    //     date: "2024-07-22",
+    //     images: ["bday.jpg", "bday-calendar.png", "bday-party.png"], // Multiple images
+    //     description: "A delightful mobile application interface designed to help users create personalized birthday experiences. The app focuses on social connection and celebration planning with an emphasis on user engagement and joy.",
+    //     technologies: ["Flutter", "Firebase", "Adobe After Effects", "Lottie", "Figma"],
+    //     features: [
+    //         "Personalized celebration planning",
+    //         "Social media integration",
+    //         "Custom animation library",
+    //         "Event scheduling",
+    //         "Photo sharing capabilities",
+    //         "Push notifications"
+    //     ],
+    //     liveUrl: "#",
+    //     githubUrl: "#"
+    // }
 ];
 
 // Function to determine if a project is recent (within 1 year)
@@ -284,6 +311,11 @@ function openProjectDetail(projectId) {
             <i class="fab fa-behance"></i> View Design
         </a>`;
     }
+    if (project.documentUrl && project.documentUrl !== '#') {
+    projectLinks += `<a href="${project.documentUrl}" class="project-link" target="_blank">
+        <i class="fas fa-file-alt"></i> View Document
+    </a>`;
+    }
 
     // Create carousel for images
     const carouselHTML = createCarousel(project.images, project.title);
@@ -391,43 +423,5 @@ document.addEventListener("DOMContentLoaded", function() {
                 nextSlide();
             }
         }
-    });
-});
-
-//achievement section
-function switchTab(tabName, element) {
-    // Remove active class from all tabs
-    const allTabs = document.querySelectorAll('.tab-item');
-    allTabs.forEach(tab => {
-        tab.classList.remove('active');
-        tab.classList.add('inactive');
-    });
-
-    // Add active class to clicked tab
-    element.classList.add('active');
-    element.classList.remove('inactive');
-
-    // Hide all content sections
-    const allSections = document.querySelectorAll('.content-section');
-    allSections.forEach(section => {
-        section.classList.remove('active');
-    });
-
-    // Show selected content section
-    document.getElementById(tabName).classList.add('active');
-}
-
-// Add hover effects and smooth transitions
-document.addEventListener('DOMContentLoaded', function() {
-    const cards = document.querySelectorAll('.achievement-card');
-
-    cards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-8px) scale(1.02)';
-        });
-
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
-        });
     });
 });

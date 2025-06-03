@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="nav-links">
-            <span class="nav-item"><a href="home.html">Home</a></span>
+            <span class="nav-item"><a href="index.html">Home</a></span>
             <span class="separator">/</span>
             <span class="nav-item"><a href="works.html">Works</a></span>
             <span class="separator">/</span>
@@ -35,10 +35,14 @@
             <span class="separator">/</span>
             <span class="nav-item"><a href="contact.html">Contact</a></span>
         </div>
-        <a href="https://www.dropbox.com/scl/fi/fl4iiu221aqe1qotkud0f/Velasco-Ma.-Cristina-Sajuyan_Resume.pdf?rlkey=7b1qg4cxi3xn4jj9p86d2en36&st=u09tqu9e&dl=0" class="download-btn" target="_blank" rel="noopener noreferrer">
+        <!-- <a href="https://www.dropbox.com/scl/fi/fl4iiu221aqe1qotkud0f/Velasco-Ma.-Cristina-Sajuyan_Resume.pdf?rlkey=7b1qg4cxi3xn4jj9p86d2en36&st=u09tqu9e&dl=0" class="download-btn" target="_blank" rel="noopener noreferrer">
             <i class="fas fa-file-pdf" style="font-size: 32px; color: white;"></i>
             <span>DOWNLOAD CV</span>
-        </a>
+        </a> -->
+        <button class="download-btn" onclick="forceDownload()">
+            <i class="fas fa-file-pdf" style="font-size: 32px; color: white;"></i>
+            <span>DOWNLOAD CV</span>
+        </button>
     </nav>
 
     <section class="achievements-section">
@@ -50,9 +54,9 @@
             <div class="tab-item inactive" onclick="switchTab('honors', this)">
                 <i class="fas fa-trophy"></i> Honors & Awards
             </div>
-            <div class="tab-item inactive" onclick="switchTab('courses', this)">
+            <!-- <div class="tab-item inactive" onclick="switchTab('courses', this)">
                 <i class="fas fa-graduation-cap"></i> Professional Courses
-            </div>
+            </div> -->
         </div>
 
         <!-- Certifications Section -->
@@ -61,40 +65,41 @@
                 <!-- Sample Certification Cards - Replace with your actual certifications -->
                 <div class="achievement-card">
                     <div class="achievement-icon">
-                        <i class="fab fa-google"></i>
+                        <i class="fa-solid fa-certificate"></i>
                     </div>
-                    <h3 class="achievement-title">Google UX Design Certificate</h3>
-                    <p class="achievement-organization">Google Career Certificates</p>
-                    <p class="achievement-date">Issued: January 2024</p>
+                    <h3 class="achievement-title">HTML, CSS, and Javascript for Web Developers</h3>
+                    <p class="achievement-organization">Coursera Certificate</p>
+                    <p class="achievement-date">Issued: November 20, 2023</p>
                     <p class="achievement-description">
-                        Comprehensive program covering user experience design fundamentals, including user research, wireframing, prototyping, and usability testing.
+                        Introductory course on HTML5 covering document structure, semantic tags, and essential elements, with hands-on guidance for setting up a development environment.
                     </p>
                     <div class="achievement-badges">
-                        <span class="badge">UX Design</span>
-                        <span class="badge">Prototyping</span>
-                        <span class="badge">User Research</span>
+                        <span class="badge">Web Development</span>
+                        <span class="badge">Front-End Web Development</span>
+                        <span class="badge">Responsive Web Design</span>
                     </div>
-                    <a href="#" class="achievement-link">
+                    <a href="https://www.coursera.org/account/accomplishments/verify/QJB779T5DVP7?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" class="achievement-link">
                         <i class="fas fa-external-link-alt"></i> View Certificate
                     </a>
                 </div>
 
                 <div class="achievement-card">
                     <div class="achievement-icon">
-                        <i class="fab fa-microsoft"></i>
+                        <i class="fa-solid fa-certificate"></i>
                     </div>
-                    <h3 class="achievement-title">Microsoft Azure Fundamentals</h3>
-                    <p class="achievement-organization">Microsoft</p>
-                    <p class="achievement-date">Issued: March 2024</p>
+                    <h3 class="achievement-title">Digital Skills: User Experience</h3>
+                    <p class="achievement-organization">Accenture</p>
+                    <p class="achievement-date">Issued: March 3, 2025</p>
                     <p class="achievement-description">
-                        Foundational knowledge of cloud services and how those services are provided with Microsoft Azure.
+                        This course described what UX is and the impact it can have on a business. It explored the foundations of UX design and the design process: design, develop and release. Information architecture was explained in addition to the different UX techniques
+                        you can use to test and develop your designs, so that they’re ready to release to the market.
                     </p>
                     <div class="achievement-badges">
-                        <span class="badge">Cloud Computing</span>
-                        <span class="badge">Azure</span>
-                        <span class="badge">Microsoft</span>
+                        <span class="badge">UX Design</span>
+                        <!-- <span class="badge">Azure</span>
+                        <span class="badge">Microsoft</span> -->
                     </div>
-                    <a href="#" class="achievement-link">
+                    <a href="https://www.futurelearn.com/certificates/7w36r7u" class="achievement-link">
                         <i class="fas fa-external-link-alt"></i> View Certificate
                     </a>
                 </div>
@@ -102,20 +107,20 @@
                 <!-- Add more certification cards as needed -->
                 <div class="achievement-card">
                     <div class="achievement-icon">
-                        <i class="fab fa-figma"></i>
+                        <i class="fa-solid fa-certificate"></i>
                     </div>
-                    <h3 class="achievement-title">Advanced UI/UX Design</h3>
-                    <p class="achievement-organization">Coursera</p>
-                    <p class="achievement-date">Issued: December 2023</p>
+                    <h3 class="achievement-title">Tech Advancement Talks</h3>
+                    <p class="achievement-organization">PUP The Programmers' Guild Flagship Event</p>
+                    <p class="achievement-date">Issued: September 7-16, 2023</p>
                     <p class="achievement-description">
-                        Advanced concepts in user interface and user experience design, focusing on modern design principles and tools.
+                        A case study competition empowering students to solve real-world tech career challenges, fostering innovation, collaboration, and growth in the dynamic field of technology.
                     </p>
                     <div class="achievement-badges">
-                        <span class="badge">Figma</span>
-                        <span class="badge">UI Design</span>
-                        <span class="badge">Design Systems</span>
+                        <span class="badge">Career</span>
+                        <!-- <span class="badge">UI Design</span>
+                        <span class="badge">Design Systems</span> -->
                     </div>
-                    <a href="#" class="achievement-link">
+                    <a href="https://drive.google.com/file/d/197L1wM5YUheB9AOjqUmHNhscyjZXQ-TM/view?usp=sharing" class="achievement-link">
                         <i class="fas fa-external-link-alt"></i> View Certificate
                     </a>
                 </div>
@@ -129,33 +134,39 @@
                     <div class="achievement-icon">
                         <i class="fas fa-medal"></i>
                     </div>
-                    <h3 class="achievement-title">Dean's List</h3>
-                    <p class="achievement-organization">University Name</p>
-                    <p class="achievement-date">Academic Year 2023-2024</p>
+                    <h3 class="achievement-title">President's List</h3>
+                    <p class="achievement-organization">Polytechnic University of the Philippines</p>
+                    <p class="achievement-date">Academic Year 2021-2025</p>
                     <p class="achievement-description">
-                        Recognized for academic excellence and maintaining a high GPA throughout the academic year.
+                        In recognition of exemplary academic achievement in the University.
                     </p>
                     <div class="achievement-badges">
                         <span class="badge">Academic Excellence</span>
-                        <span class="badge">High GPA</span>
+                        <!-- <span class="badge">High GPA</span> -->
                     </div>
+                    <!-- <a href="https://drive.google.com/file/d/197L1wM5YUheB9AOjqUmHNhscyjZXQ-TM/view?usp=sharing" class="achievement-link">
+                        <i class="fas fa-external-link-alt"></i> View Certificate
+                    </a> -->
                 </div>
 
                 <div class="achievement-card">
                     <div class="achievement-icon">
                         <i class="fas fa-trophy"></i>
                     </div>
-                    <h3 class="achievement-title">Best UI/UX Design Project</h3>
-                    <p class="achievement-organization">College Design Competition</p>
-                    <p class="achievement-date">November 2023</p>
+                    <h3 class="achievement-title">3rd Place in Webpage Design Contest</h3>
+                    <p class="achievement-organization">Nutrition Month Celebration</p>
+                    <p class="achievement-date">July 30, 2018</p>
                     <p class="achievement-description">
-                        First place award for innovative user interface design in the annual college design competition.
+                        Third place award for webpage design in the nutrition month celebration.
                     </p>
                     <div class="achievement-badges">
-                        <span class="badge">First Place</span>
-                        <span class="badge">Innovation</span>
-                        <span class="badge">Design Competition</span>
+                        <span class="badge">Third Place</span>
+                        <!-- <span class="badge">Innovation</span> -->
+                        <span class="badge">Webpage Design Competition</span>
                     </div>
+                    <a href="https://drive.google.com/file/d/1YcZd0oW9ASTikVcglvO4cFLfqC-shDsF/view?usp=sharing" class="achievement-link">
+                        <i class="fas fa-external-link-alt"></i> View Certificate
+                    </a>
                 </div>
 
                 <!-- Add more honors as needed -->
@@ -163,7 +174,7 @@
         </div>
 
         <!-- Professional Courses Section -->
-        <div id="courses" class="content-section">
+        <!-- <div id="courses" class="content-section">
             <div class="achievements-grid">
                 <div class="achievement-card">
                     <div class="achievement-icon">
@@ -205,9 +216,48 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
+    <script>
+        function switchTab(tabName, element) {
+            // Remove active class from all tabs
+            const allTabs = document.querySelectorAll('.tab-item');
+            allTabs.forEach(tab => {
+                tab.classList.remove('active');
+                tab.classList.add('inactive');
+            });
+
+            // Add active class to clicked tab
+            element.classList.add('active');
+            element.classList.remove('inactive');
+
+            // Hide all content sections
+            const allSections = document.querySelectorAll('.content-section');
+            allSections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Show selected content section
+            document.getElementById(tabName).classList.add('active');
+        }
+
+        // Add hover effects and smooth transitions
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.achievement-card');
+
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px) scale(1.02)';
+                });
+
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+        });
+    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
