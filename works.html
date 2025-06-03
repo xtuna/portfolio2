@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Cristina's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="works">
+    <nav class="navbar">
+        <div class="logo">
+            <div class="profile-picture">
+                <img src="xtina.JPG" alt="Cristina Velasco headshot">
+            </div>
+        </div>
+        <div class="nav-links">
+            <span class="nav-item"><a href="home.html">Home</a></span>
+            <span class="separator">/</span>
+            <span class="nav-item"><a href="works.html" class="active">Works</a></span>
+            <span class="separator">/</span>
+            <span class="nav-item"><a href="about.html">About</a></span>
+            <span class="separator">/</span>
+            <span class="nav-item"><a href="achievements.html">Achievements</a></span>
+            <span class="separator">/</span>
+            <span class="nav-item"><a href="contact.html">Contact</a></span>
+        </div>
+        <a href="https://www.dropbox.com/scl/fi/fl4iiu221aqe1qotkud0f/Velasco-Ma.-Cristina-Sajuyan_Resume.pdf?rlkey=7b1qg4cxi3xn4jj9p86d2en36&st=u09tqu9e&dl=0" class="download-btn" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-file-pdf" style="font-size: 32px; color: white;"></i>
+            <span>DOWNLOAD CV</span>
+        </a>
+    </nav>
+
+    <div class="container">
+
+        <div class="content-box">
+            <div id="recent-projects" class="content-item active">Recent Projects</div>
+            <div id="old-projects" class="content-item inactive">Old Projects</div>
+        </div>
+
+        <div id="recent-projects-content" class="card-container">
+            <!-- Projects will be dynamically populated here -->
+        </div>
+
+        <div id="old-projects-content" class="card-container hidden">
+            <!-- Projects will be dynamically populated here -->
+        </div>
+    </div>
+
+    <!-- Project Detail Modal -->
+    <div id="project-detail" class="project-detail hidden">
+        <div class="project-detail-content">
+            <button class="close-btn" onclick="closeProjectDetail()">&times;</button>
+            <div id="project-detail-body">
+                <!-- Project details will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
